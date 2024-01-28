@@ -1,0 +1,984 @@
+/*old main page (useless, keeping the code just in case)*/
+
+#Acceuil{
+  width : 1835px;
+  height : 100px;
+  padding: 20px ;
+  border : 2px solid black;
+  border-radius : 20px ;
+  font-family: "Poppins";
+  background-color: red;
+}
+
+#Acceuil:hover{
+  width : 1835px;
+  height : 200px;
+  padding: 50px ;
+  background-color: blueviolet;
+  transition: 0.5s;
+  justify-content: space-between;
+}
+
+.background_img{
+
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://weezevent.com/wp-content/uploads/2019/02/15185444/whf18_013-1900x1267.jpg);
+
+}
+
+.main_container{
+
+  text-align: center;
+  margin: 100px;
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: blueviolet;
+
+}
+
+.capitalize {
+	text-transform: lowercase;
+	display: inline-block;
+  font-size: 20px;
+  justify-content: space-between;
+}
+ 
+.capitalize:hover {
+  transition: 0.5s;
+	text-decoration: underline;
+  font-size: 50px;
+  margin: 20px;
+}
+
+/*main page*/
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.body{
+width: watcher;
+}
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://weezevent.com/wp-content/uploads/2019/02/15185444/whf18_013-1900x1267.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.reserver{
+  margin-left: px;
+  margin-top: 50px;
+}
+nav{
+  display: flex;
+  padding: 2% 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  border-radius: 45%;
+  width: 250px;
+}
+nav img{
+  width: 150px;
+}
+.nav-links{
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+
+}
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after{
+  content:'';
+  width: 0px;
+  height: 2px;
+  background: rgb(109, 233, 255);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+.text-box{
+  width: 500%;
+  color: rgb(109, 233, 255);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  margin-top: 20px;
+}
+.text-box2{
+  width: 250%;
+  color: white;
+  position: sticky;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  margin-top: 20px;
+}
+.text-box h1{
+  font-size: 62px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  margin-top: 20px;
+}
+.text-box p{
+  margin:10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-top: 120px;
+}
+.hero-btn:hover{
+  border: 1px solid #fff3f3;
+  background: #f44336;
+  transition: 1s;
+}
+
+/*search page*/
+
+#searchbar{
+  margin-left: 15%;
+  padding:15px;
+  border-radius: 10px;
+}
+
+input[type=text] {
+   width: 30%;
+   -webkit-transition: width 0.15s ease-in-out;
+   transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus,
+     change its width to 100% */
+input[type=text]:focus {
+  width: 70%;
+}
+
+#list{
+  width: 300px;
+  height: 1000px;
+  font-size:  1.5em;
+  margin-left: 90px;
+}
+
+.concerts{
+  display: list-item
+} 
+
+.concerts:hover{
+  transition: 0.5s;
+  text-decoration: underline;
+  color: #EE82EE;
+  font-size: 30px;
+  margin: 10px;
+} 
+
+/*What's the purpose ?
+body{
+
+  background-image: url(https://www.peintures1825.fr/wp-content/uploads/2018/04/1998_1-1.jpg);
+  transition: background-image 0.5s ease-in-out;
+
+}
+/*
+
+/*Page présentation du sujet */
+
+h1 {
+  text-align: center;
+  font-size: 100px;
+  font-family: fantasy;
+  color: purple;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy;
+}
+
+#conteneur p{
+
+  font-size: 20px;
+  font-family: fantasy;
+
+}
+
+#conteneur {
+  display: flex;
+  /* Use flexbox to arrange the divs */
+  justify-content: space-between;
+  /* Add space between the divs */
+  align-items: center;
+  /* Center the items vertically */
+  width: 100%;
+  min-height: 800px;
+  height: 800px;
+  margin-left: 30px;
+  margin-top: 10px;
+  color: purple;
+}
+
+#idea {
+  padding: 20px;
+  border: 2px solid purple;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+#purpose {
+  padding: 20px;
+  border: 2px solid purple;
+  border-radius: 50px;
+  margin-left: 30px;
+  transition: 0.5s;
+  margin-right: 50px;
+}
+
+
+.size_transition_over {
+  width: 35%;
+  height: 45%;
+}
+
+.size_transition_out {
+  width: 40%;
+  height: 50%;
+}
+
+.black {
+  background-color: purple;
+}
+
+.aqua {
+  background: transparent;
+  width: 50%;
+  height: 60%;
+}
+
+#idea:hover {
+
+  width: 45%;
+  height: 55%;
+
+}
+
+#purpose:hover {
+  width: 45%;
+  height: 55%;
+}
+
+.background_presentation {
+
+  background-image: url(https://cdn.shopify.com/s/files/1/0096/5922/0027/files/fond-ecran-mai-2021-Green-and-Paper.jpg?v=1621266178;)
+
+}
+
+/*main page*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.body {
+  width: watcher;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://weezevent.com/wp-content/uploads/2019/02/15185444/whf18_013-1900x1267.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.reserver {
+  margin-left: px;
+  margin-top: 50px;
+}
+
+nav {
+  display: flex;
+  padding: 2% 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  border-radius: 45%;
+  width: 250px;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  background: rgb(109, 233, 255);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 500%;
+  color: rgb(109, 233, 255);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.text-box2 {
+  width: 250%;
+  color: white;
+  position: sticky;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.text-box h1 {
+  font-size: 62px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-top: 120px;
+}
+
+.hero-btn:hover {
+  border: 1px solid #fff3f3;
+  background: #f44336;
+  transition: 1s;
+}
+
+/*search page*/
+
+#searchbar {
+  margin-left: 15%;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+input[type=text] {
+  width: 30%;
+  -webkit-transition: width 0.15s ease-in-out;
+  transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus,
+     change its width to 100% */
+input[type=text]:focus {
+  width: 70%;
+}
+
+#list {
+  width: 300px;
+  height: 1000px;
+  font-size: 1.5em;
+  margin-left: 90px;
+}
+
+.concerts {
+  display: list-item
+}
+
+.concerts:hover {
+  transition: 0.5s;
+  text-decoration: underline;
+  color: #EE82EE;
+  font-size: 30px;
+  margin: 5px;
+}
+
+
+.body{
+
+  transition: 0.5s ease-in-out;
+  background-image: url(https://www.peintures1825.fr/wp-content/uploads/2018/04/1998_1-1.jpg);
+
+}
+
+/*What's the purpose ?
+body{
+
+  background-image: url(https://www.peintures1825.fr/wp-content/uploads/2018/04/1998_1-1.jpg);
+  transition: background-image 0.5s ease-in-out;
+
+}
+/*
+/*main page*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.body {
+  width: watcher;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://weezevent.com/wp-content/uploads/2019/02/15185444/whf18_013-1900x1267.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.reserver {
+  margin-left: px;
+  margin-top: 50px;
+}
+
+nav {
+  display: flex;
+  padding: 2% 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  border-radius: 45%;
+  width: 250px;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  background: rgb(109, 233, 255);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 500%;
+  color: rgb(109, 233, 255);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.text-box2 {
+  width: 250%;
+  color: white;
+  position: sticky;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.text-box h1 {
+  font-size: 62px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-top: 120px;
+}
+
+.hero-btn:hover {
+  border: 1px solid #fff3f3;
+  background: #f44336;
+  transition: 1s;
+}
+
+/*search page*/
+
+#searchbar {
+  margin-left: 15%;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+input[type=text] {
+  width: 30%;
+  -webkit-transition: width 0.15s ease-in-out;
+  transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus,
+     change its width to 100% */
+input[type=text]:focus {
+  width: 70%;
+}
+
+#list {
+  width: 300px;
+  height: 1000px;
+  font-size: 1.5em;
+  margin-left: 90px;
+}
+
+.concerts {
+  display: list-item
+}
+
+.concerts:hover {
+  transition: 0.5s;
+  text-decoration: underline;
+  color: #EE82EE;
+  font-size: 30px;
+  margin: 10px;
+}
+
+/*What's the purpose ?
+body{
+
+  background-image: url(https://www.peintures1825.fr/wp-content/uploads/2018/04/1998_1-1.jpg);
+  transition: background-image 0.5s ease-in-out;
+
+}
+/*
+
+/*Page présentation du sujet */
+
+h1 {
+  text-align: center;
+  font-size: 100px;
+  font-family: fantasy;
+  color: purple;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy;
+}
+
+#conteneur p{
+
+  font-size: 20px;
+  font-family: fantasy;
+
+}
+
+#conteneur {
+  display: flex;
+  /* Use flexbox to arrange the divs */
+  justify-content: space-between;
+  /* Add space between the divs */
+  align-items: center;
+  /* Center the items vertically */
+  width: 100%;
+  min-height: 800px;
+  height: 800px;
+  margin-left: 30px;
+  margin-top: 10px;
+  color: purple;
+}
+
+#idea {
+  padding: 20px;
+  border: 2px solid purple;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+#purpose {
+  padding: 20px;
+  border: 2px solid purple;
+  border-radius: 50px;
+  margin-left: 30px;
+  transition: 0.5s;
+  margin-right: 50px;
+}
+
+
+.size_transition_over {
+  width: 35%;
+  height: 45%;
+}
+
+.size_transition_out {
+  width: 40%;
+  height: 50%;
+}
+
+.black {
+  background-color: purple;
+}
+
+.aqua {
+  background: transparent;
+  width: 50%;
+  height: 60%;
+}
+
+#idea:hover {
+
+  width: 45%;
+  height: 55%;
+
+}
+
+#purpose:hover {
+  width: 45%;
+  height: 55%;
+}
+
+.background_presentation {
+
+  background-image: url(https://cdn.shopify.com/s/files/1/0096/5922/0027/files/fond-ecran-mai-2021-Green-and-Paper.jpg?v=1621266178;)
+
+}
+
+/*group presentation page*/
+
+#id_card_container{
+  display: flex;
+  /* Use flexbox to arrange the divs */
+  align-items: center;
+  /* Center the items vertically */
+  width: 100%;
+  min-height: 300px;
+  height: 300px;
+  margin-top: 5%;
+  margin-left: 25%;
+}
+
+#id_card_container_2{
+  display: flex;
+  /* Use flexbox to arrange the divs */
+  align-items: center;
+  /* Center the items vertically */
+  width: 100%;
+  min-height: 300px;
+  height: 300px;
+  margin-left: 25%;
+}
+
+#id_card{
+  width: 20%;
+  height: 60%;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin-right: 40px;
+
+}
+
+#id_card2{
+  width: 20%;
+  height: 60%;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin-right: 40px;
+
+}
+
+#id_card3{
+  width: 20%;
+  height: 60%;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin-right: 40px;
+
+}
+
+#id_card4{
+  width: 20%;
+  height: 60%;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin-right: 40px;
+
+
+}
+
+.id_card_shadow {
+  box-shadow: 0 0 20px 0px rgb(2, 1, 1);
+  transition: 0.2s;
+}
+
+#id_img{
+
+  margin-left: 2% ;
+  float: right;
+
+}
+
+#id_img2{
+
+  margin-left: 2% ;
+  float: right;
+
+}
+
+#id_img3{
+
+  margin-left: 2% ;
+  float: right;
+
+}
+
+#id_img4{
+
+  margin-left: 2% ;
+  float: right;
+
+}
+
+#id_card p{
+
+  font-family: fantasy;
+
+}
+
+#id_card2 p{
+
+  font-family: fantasy;
+
+}
+
+#id_card3 p{
+
+  font-family: fantasy;
+
+}
+
+#id_card4 p{
+
+  font-family: fantasy;
+
+}
+
+#id_card h3{
+
+  font-family: fantasy;
+
+}
+
+#id_card2 h3{
+
+  font-family: fantasy;
+
+}
+
+#id_card3 h3{
+
+  font-family: fantasy;
+
+}
+
+#id_card4 h3{
+
+  font-family: fantasy;
+}
+
+.hide{
+
+  visibility: hidden;
+
+}
+
+.id_card_background{
+
+  background-color: rgba(226,0,0,0.7);
+
+}
+
+#grp_background{
+
+  background: url(https://cdn.shopify.com/s/files/1/0096/5922/0027/files/fond-ecran-mai-2021-Green-and-Paper.jpg?v=1621266178);
+
+}
+
+h4{
+
+  font-family: fantasy;
+  font-size: 50px;
+  text-align: center;
+
+}
+
+ /* Style pour le conteneur du menu déroulant */
+ .dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style pour le bouton du menu déroulant */
+  .dropbtn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  /* Style pour le contenu du menu déroulant */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px 0;
+  }
+  
+  /* Style pour les liens du menu déroulant */
+  .dropdown-content a {
+    color: #8d1b9c;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Style au survol des liens du menu déroulant */
+  .dropdown-content a:hover {
+    background-color: #9f21a3;
+  }
+  
+  /* Affichage du contenu du menu déroulant au survol du conteneur */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

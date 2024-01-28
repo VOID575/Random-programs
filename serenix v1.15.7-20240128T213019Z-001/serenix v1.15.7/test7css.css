@@ -1,0 +1,208 @@
+:root{
+    --hauteur-menu: 60px;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat, sans-serif;
+  }
+  nav {
+    width: 100%;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+  }
+  nav > ul {
+    display: flex;
+    text-align: center;
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
+    height: var(--hauteur-menu);
+  }
+   
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav > ul > li {
+    background-color: white;
+    position: relative;
+    height: 100%;
+    flex: 1;
+  }
+  nav > ul > li > a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .menu-deroulant > a:after{
+    content: '❯';
+    font-size: 15px;
+    margin-left: 7px;
+    display: inline-block;
+  }
+  .sous-menu {
+    margin-top: var(--hauteur-menu);
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    border-radius: 2px;
+    overflow: hidden;
+    max-height: 0;
+  }
+  
+  .sous-menu > li > a {
+    height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+  }
+  nav > ul > li:hover > a{
+    color: #2169EC;
+  }
+  .sous-menu > li:hover {
+    background-color: rgba(33, 105, 236, 0.3);
+  }
+  
+  .sous-menu > li:hover > a {
+    color: white;
+  }
+  
+  @keyframes rotationFleche {
+    0% {
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(90deg);
+    }
+  }
+  .menu-deroulant:hover > a:after{
+    animation: rotationFleche 0.2s linear forwards;
+  }
+  @keyframes apparitionSousMenu {
+    0% {
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+      border-top: 3px solid #2169EC;
+    }
+    30% {
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+    100% {
+      max-height: 50em;
+      border-top: 3px solid #2169EC;
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+  }
+  .menu-deroulant:hover > .sous-menu {
+    animation: apparitionSousMenu 1s forwards;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.body{
+    font-family: "arial", sans-serif;
+    text-align: center;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://weezevent.com/wp-content/uploads/2019/02/15185444/whf18_013-1900x1267.jpg);
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://weezevent.com/wp-content/uploads/2019/02/15185444/whf18_013-1900x1267.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.logo{
+    width: 120px;
+}
+.text-box {
+    color: rgb(109, 233, 255);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 120px; /* Adjust this value */
+}
+
+.text-box2 {
+    color: rgb(255, 221, 221);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 400px; /* Adjust this value */
+    font-size: 400px;
+    overflow: hidden;
+    background-size: auto;
+    margin-top: 300px;
+}
+
+.text-box h1{
+    font-size: 62px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 20px;
+}
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 35px;
+    color: rgb(255, 221, 221);
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 550px; /* Adjust the maximum width as needed */
+    min-width: 550px;
+    margin: 0px auto 0; /* Centers the slider horizontally */
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Adjust the object-fit property as needed */
+  }
+  
+  .slider-navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .slider-navigation span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+.test-text{
+    margin-top: 600px;
+}
