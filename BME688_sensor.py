@@ -2,12 +2,11 @@ import time
 import utime
 from breakout_bme68x import BreakoutBME68X, STATUS_HEATER_STABLE
 from pimoroni_i2c import PimoroniI2C
+from csv_module import * 
 
 PINS_I2C_BME688 = {"sda": 4, "scl": 5}
 
 i2c = PimoroniI2C(**PINS_I2C_BME688)
-#"w" signifie write/écraser
-fichier = open("blackbox.csv", "w")
 bme = BreakoutBME68X(i2c)
 
 while True:
@@ -24,7 +23,21 @@ while True:
     date = utime.localtime(utime.time())
  
     #J'écris toute les mesures
-    fichier.write(f"{date[0]}/{date[1]}/{date[2]} à {date[3]}h{date[4]}min{date[5]}sec : \n{round(temperature,2)}c, {round(pressure,2)}Pa, {round(humidity,2)}%, {round(gas,2)} Ohms\n\n")
+    ajouter_valeur(f"{date[0]}/{date[1]}/{date[2]} à {date[3]}h{date[4]}min{date[5]}sec :")
+    ajouter_valeur(f"{round(temperature,2)}c")
+    ajouter_valeur(f"{round(pressure,2)}Pa")
+    ajouter_valeur(f"{round(humidity,2)}%")
+    ajouter_valeur(f"{round(gas,2)}Ohms")
+    gerer_limitation_valeurs()
     
-    print(f"{round(temperature,2)}c, {round(pressure,2)}Pa, {round(humidity,2)}%, {round(gas,2)} Ohms\n")
-    time.sleep(1.0) 
+    print(f"{date[0]}/{date[1]}/{date[2]} à {date[3]}h{date[4]}min{date[5]}sec : {round(temperature,2)}c, {round(pressure,2)}Pa, {round(humidity,2)}%, {round(gas,2)} Ohms\n")
+    
+    time.sleep(0.2)
+
+    
+        
+    
+    
+    
+
+
